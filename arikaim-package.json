@@ -6,7 +6,7 @@
     "repository": "https://github.com/arikaim/vue-library.git",
     "help": "https://vuejs.org/v2/guide/",
     "description": "The progressive JavaScript framework.",
-    "framework": true,
+    "framework": false,
     "files": [
         "vue-2.6.12.min.js"        
     ],
