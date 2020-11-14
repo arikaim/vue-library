@@ -1,0 +1,20 @@
+{
+    "version": "2.6.12",
+    "name": "vue",
+    "title": "Vue",
+    "package-type": "library",
+    "repository": "https://github.com/arikaim/vue-library.git",
+    "help": "https://vuejs.org/v2/guide/",
+    "description": "The progressive JavaScript framework.",
+    "framework": true,
+    "files": [
+        "vue-2.6.12.min.js"        
+    ],
+    "versions": {   
+        "source-2.6.12": {
+            "files": [
+                "vue-2.6.12.js"   
+            ] 
+        }
+    }           
+}
