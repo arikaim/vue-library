@@ -8,12 +8,14 @@
     "description": "The progressive JavaScript framework.",
     "framework": false,
     "files": [
-        "vue-2.6.12.min.js"        
+        "vue-2.6.12.min.js",
+        "vue-app.js"        
     ],
     "versions": {   
         "source-2.6.12": {
             "files": [
-                "vue-2.6.12.js"   
+                "vue-2.6.12.js",
+                "vue-app.js"     
             ] 
         }
     }           
