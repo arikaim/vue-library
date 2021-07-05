@@ -10,14 +10,31 @@
  * Vue app Helper class
  */
 function VueApp() {
+    var self = this;
     var methods = {};
     var data = {};
 
-    this.addMethod = function(name,definition) {
+    this.vue = null;
+
+    this.init = function(id) {
+        id = getDefaultValue(id,'#app');
+
+        this.vue = new Vue({
+            el: id,
+            data: function() {
+                return self.getData()
+            },
+            methods: self.getMethods()
+        });
+    
+        console.log('Vue app mounted in ' + id);
+    };
+
+    this.addMethod = function(name, definition) {
         methods[name] = definition;
     };
 
-    this.addData = function(name,definition) {
+    this.addData = function(name, definition) {
         data[name] = definition;
     };
 
@@ -28,11 +45,10 @@ function VueApp() {
     this.getData = function() {
         return data;
     }
-
-    this.loadComponent = function(name) {
-
-    };
 }
 
-
 var vueApp = new VueApp();
+
+$(window).on('load',function() {
+    vueApp.init();
+});
